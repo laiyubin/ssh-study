@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/../hibernate-generic-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../hibernate-generic-dao/dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../hibernate-generic-dao/dao-hibernate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../hibernate-generic-dao/search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../hibernate-generic-dao/search-hibernate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../hibernate-generic-dao/search-jpa-hibernate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../hibernate-generic-dao/test-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../hibernate-generic-dao/test-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../j7-study" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../j7-study/pom.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+  </component>
+</project>
+

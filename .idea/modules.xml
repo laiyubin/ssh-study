@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../bae/blogwl/bce_java_default.iml" filepath="$PROJECT_DIR$/../bae/blogwl/bce_java_default.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate-generic-dao/dao/dao.iml" filepath="$PROJECT_DIR$/../hibernate-generic-dao/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate-generic-dao/dao-hibernate/dao-hibernate.iml" filepath="$PROJECT_DIR$/../hibernate-generic-dao/dao-hibernate/dao-hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate-generic-dao/hibernate-generic-dao.iml" filepath="$PROJECT_DIR$/../hibernate-generic-dao/hibernate-generic-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../j7-study/j7-study.iml" filepath="$PROJECT_DIR$/../j7-study/j7-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate-generic-dao/search/search.iml" filepath="$PROJECT_DIR$/../hibernate-generic-dao/search/search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate-generic-dao/search-hibernate/search-hibernate.iml" filepath="$PROJECT_DIR$/../hibernate-generic-dao/search-hibernate/search-hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate-generic-dao/search-jpa-hibernate/search-jpa-hibernate.iml" filepath="$PROJECT_DIR$/../hibernate-generic-dao/search-jpa-hibernate/search-jpa-hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssh-study.iml" filepath="$PROJECT_DIR$/ssh-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate-generic-dao/test-base/test-base.iml" filepath="$PROJECT_DIR$/../hibernate-generic-dao/test-base/test-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate-generic-dao/test-search/test-search.iml" filepath="$PROJECT_DIR$/../hibernate-generic-dao/test-search/test-search.iml" />
+    </modules>
+  </component>
+</project>
+
