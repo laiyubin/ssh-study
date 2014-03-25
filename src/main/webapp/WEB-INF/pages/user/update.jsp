@@ -15,7 +15,7 @@
 
     <div class="row">
         <div class="span8">
-            <form class="form-horizontal" action="${context}/u/save" method="post" onsubmit="return formValidate()">
+            <form id="form1" name="form1" class="form-horizontal" action="${context}/u/save" method="post" onsubmit="return formValidate()">
                 <input type="hidden" id="id" name="id" value="${user.id}"/>
                 <input type="hidden" id="version" name="version" value="${user.version}"/>
                 <div class="control-group">
@@ -36,7 +36,7 @@
                     <label class="control-label" for="confirmPassword">确认密码</label>
 
                     <div class="controls">
-                        <input type="password" id="confirmPassword">
+                        <input type="password" name="confirmPassword" id="confirmPassword">
                     </div>
                 </div>
                 <div class="control-group">
@@ -57,29 +57,34 @@
     </div>
 </div>
 <script src="${context}/js/jquery.js"></script>
-<script src="${context}/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="${context}/js/jquery.validate.js"></script>
+<script type="text/javascript" src="${context}/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-    function formValidate(f) {
-        var name = $("#name").val()
-        if ($.trim(name) == '') {
+    $().ready(function () {
 
-            alert('用户名不能为空');
-
-            return false;
-        }
-        var pwd = $("#password").val();
-        var confPwd = $("#confirmPassword").val();
-        if (pwd != confPwd) {
-
-            alert('两次输入密码不一致')
-            return false;
-        }
-        if ($.trim(pwd).length < 6) {
-            alert('密码长度必须大于6位')
-            return false;
-        }
-        f.submit();
-    }
+        $("#form1").validate({
+            rules: {
+                name: "required",
+                password: {required: true, minlength: 6},
+                confirmPassword: {
+                    required: true,
+                    minlength: 6,
+                    equalTo: "#password"
+                }
+            },
+            messages: {
+                name: "Please enter name",
+                password: {
+                    required: "Please enter password",
+                    minlength: "Your password must be at least 6 characters long"
+                },
+                confirmPassword: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 6 characters long",
+                    equalTo: "Please enter the same password as above"
+                }
+            }});
+    });
 </script>
 </body>
 </html>
