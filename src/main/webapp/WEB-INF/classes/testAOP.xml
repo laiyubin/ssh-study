@@ -3,24 +3,24 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-      http://www.springframework.org/schema/aop  http://www.springframework.org/schema/beans/spring-aop.xsd">
-    <bean class="LoginController" id="loginController">
+      http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean class="com.demos.aop.LoginController" id="loginController">
         <constructor-arg name="name" value="laiyubin"/>
     </bean>
 
-    <bean class="BeforeLoginService" id="beforeLoginService"></bean>
-    <bean class="AfterLoginService" id="afterLoginService"></bean>
-    <bean class="AroundLogin" id="aroundLogin"/>
+    <bean class="com.demos.aop.BeforeLoginService" id="beforeLoginService"></bean>
+    <bean class="com.demos.aop.AfterLoginService" id="afterLoginService"></bean>
+    <bean class="com.demos.aop.AroundLogin" id="aroundLogin"/>
 
 
     <bean id="customerPointcut"
           class="org.springframework.aop.support.NameMatchMethodPointcut">
-        <property name="mappedName" value="login" />
+        <property name="mappedName" value="login"/>
     </bean>
 
     <bean id="customerPointcut2"
           class="org.springframework.aop.support.NameMatchMethodPointcut">
-        <property name="mappedName" value="login2" />
+        <property name="mappedName" value="login2"/>
     </bean>
 
     <bean id="beforeAdvisor"
@@ -30,12 +30,12 @@
                 <value>.*Controller.*.</value>
             </list>
         </property>
-        <property name="advice" ref="beforeLoginService" />
+        <property name="advice" ref="beforeLoginService"/>
     </bean>
     <bean id="afterAdvisor"
           class="org.springframework.aop.support.DefaultPointcutAdvisor">
-        <property name="pointcut" ref="customerPointcut" />
-        <property name="advice" ref="afterLoginService" />
+        <property name="pointcut" ref="customerPointcut"/>
+        <property name="advice" ref="afterLoginService"/>
     </bean>
 
     <bean id="customerServiceProxy"
