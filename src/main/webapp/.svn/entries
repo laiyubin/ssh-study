@@ -26,73 +26,8 @@ walk_lai
 
 9db0c752-5a80-4ae8-80e6-193ec1eccb86
 
-header.jsp
-file
-
-
-
-
-2013-08-31T08:44:50.075308Z
-d013f60efbdc80008f8d18245938aa22
-2013-09-03T07:13:15.395596Z
-1
-walk_lai
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-847
-
-login.jsp
-file
-
-
-
-
-2013-07-30T08:35:24.524165Z
-07330ca7ac301c994cf838f4ae98638b
-2013-09-03T07:13:15.395596Z
-1
-walk_lai
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-527
+WEB-INF
+dir
 
 accessDenied.jsp
 file
@@ -128,15 +63,12 @@ walk_lai
 
 466
 
-images
-dir
-
+admin.html
+file
+0
 
 
 add
-
-WEB-INF
-dir
 
 b2demo
 dir
@@ -151,9 +83,6 @@ dir
 
 
 add
-
-js
-dir
 
 bootstrap
 dir
@@ -191,4 +120,82 @@ has-props
 
 
 318
+
+header.jsp
+file
+
+
+
+
+2013-08-31T08:44:50.075308Z
+d013f60efbdc80008f8d18245938aa22
+2013-09-03T07:13:15.395596Z
+1
+walk_lai
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+847
+
+images
+dir
+
+
+
+add
+
+js
+dir
+
+login.jsp
+file
+
+
+
+
+2013-07-30T08:35:24.524165Z
+07330ca7ac301c994cf838f4ae98638b
+2013-09-03T07:13:15.395596Z
+1
+walk_lai
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+527
 
